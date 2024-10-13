@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Polish</title>
     <style>
         body {
             background-color: black;
+            margin: 0;
+            padding: 0;
         }
         .wrap {
             text-align: center;
+            padding: 150px 0;
         }
         .wrap .textmain {
             color: white;
-            letter-spacing: 5px;
+            letter-spacing: 2.5px;
             font-size: 60px;
             font-family: 'Courier New', Courier, monospace;
-            text-align: center;
-            padding-top: 200px;
+            font-weight: bold;
+            margin-bottom: 50px;
         }
-        .wrap .links a{
-            padding-left: 20px;
-            margin-left: -5px;
-            text-align: center;
-            color: white;
+        .wrap .links a {
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
             text-decoration: none;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 25px;
+            margin: 0 15px;
+            font-size: 20px;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+        .wrap .links a:hover {
+            color: #00bfff;
         }
     </style>
 </head>
@@ -35,11 +42,10 @@
         <div class="textmain">
             Polish's Website
         </div>
-        <br>
         <div class="links">
             <a href="about.html">&lt;About Me&gt;</a>
-            <a href="tits">&lt;Projects&gt;</a>
-            <a href="discord">&lt;Contact&gt;</a>
+            <a href="projects.html">&lt;Projects&gt;</a>
+            <a href="contact.html">&lt;Contact&gt;</a>
         </div>
     </div>
 </body>

@@ -4,56 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polish</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: black;
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
         }
+
         .links {
-            padding-top: 60px;
-            padding-left: 20px;
-            margin-left: -5px;
             text-align: center;
+            padding: 30px 0;
         }
-        .links a{
-            color: white;
+
+        .links a {
+            color: #ffffff;
             text-decoration: none;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 25px;
+            margin: 0 15px;
+            font-size: 20px;
+            font-weight: 700;
+            transition: color 0.3s ease;
         }
+
+        .links a:hover {
+            color: #00bfff;
+        }
+
         .wrapper {
-            color: white;
-            font-family: 'Courier New', Courier, monospace;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
-        .wrapper a{
-            text-decoration: underline;
-            color: white;
+
+        .wrapper a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s ease;
         }
-        .wrapper h1{
+
+        .wrapper a:hover {
+            color: #00bfff;
+        }
+
+        h1 {
             text-align: center;
-            font-size: 60px;
+            font-size: 50px;
+            margin-bottom: 20px;
+            font-weight: 700;
         }
-        .wrapper .exampleProjects p{
-            margin-left: 20px;
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .exampleProjects a {
+            color: #ffffff;
+            font-weight: 700;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .exampleProjects a:hover {
+            color: #00bfff;
+        }
+
+        .exampleProjects p {
+            margin: 10px 0 20px 20px;
+        }
+
+        button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #00bfff;
+            color: #ffffff;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffffff;
+            color: #000000;
         }
     </style>
 </head>
 <body>
     <div class="links">
         <a href="about.html">&lt;About Me&gt;</a>
-        <a href="tits">&lt;Projects&gt;</a>
-        <a href="discord">&lt;Contact&gt;</a>
+        <a href="projects.html">&lt;Projects&gt;</a>
+        <a href="contact.html">&lt;Contact&gt;</a>
     </div>
+
     <div class="wrapper">
         <h1>About Me</h1>
-        <p>Hi, I'm Kacper "Polish" Abramowski.</p><br>
-        <p>I'm a self-taught programmer with a passion of creating software that solves problems no one has!<br>Allthough I'm currently looking for my first full-time job, I have spent countless hours developing &lt;<a href="projects.html">Personal Projects</a>&gt; that range from very simple software to small scale games!</p>
-        <p>I have worked with multiple technologies such as Python, HTML, PHP and Lua to name a couple. I do have a &lt;<a href="https://www.Github.com/PolishDogge" target="_blank">Public GitHub</a>&gt;, on which you can find projects like:</p>
+        <p>Hi, I'm Kacper "Polish" Abramowski. I'm a self-taught programmer with a passion for creating software that solves unique problems!</p>
+        <p>I'm actively looking for my first full-time job and have worked on various &lt;<a href="projects.html">Personal Projects</a>&gt; ranging from simple utilities to small-scale games.</p>
+        <p>Technologies I have experience with include Python, HTML, PHP, and Lua. You can check out my &lt;<a href="https://www.Github.com/PolishDogge" target="_blank">Public GitHub</a>&gt; for projects like:</p>
+
         <div class="exampleProjects">
-            · <a href="https://github.com/PolishDogge/Twitch-Message-Counter">Twitch Message Counter:</a>
-            <p>A program that keeps track of user sent messages in the chat of the streamer. It might be used for a 'loyalty' system or used for purely 'statistic keeping'. It was made using my own made library "Python Twitch OAuth" and mainly the requests library.</p>
-            · <a href="https://github.com/PolishDogge/Spotify-Show-Currently-Playing"> Spotify Show Currently Playing</a>
-            <p>The program that, as the name implies, the currently listened to track from Spotify and displays it in a box made from TkInter. With multiple settings, ways of configuring it and the code being rather simple. Uses the Spotify API, TkInter and PIL libraries. </p>
+            <p style="margin-left: 5px;">· <a href="https://github.com/PolishDogge/Twitch-Message-Counter">Twitch Message Counter</a> </p> <p>- A program that tracks chat messages in a streamer's chat, useful for loyalty systems or statistics.</p>
+            <p style="margin-left: 5px;">· <a href="https://github.com/PolishDogge/Spotify-Show-Currently-Playing">Spotify Show Currently Playing</a></p> <p>- Displays the current Spotify track with various settings using TkInter and the Spotify API.</p>
         </div>
+        <p>Through hese projects, I've developed strong skills working with Python, it's multiple libraries and multiple different API's and learned the importance of clean, maintainable code. I'm constantly learning and trying to improve.</p>
+        <p>I’m currently seeking opportunities where I can continue growing and contributing as a software developer. If you're interested in working together, feel free to check out my &lt;<a href="https://www.Github.com/PolishDogge" target="_blank">GitHub</a>&gt; or &lt;<a href="contact.html">Contact Me!</a>&gt;</p>
     </div>
 </body>
 </html>
